@@ -1,0 +1,5 @@
+MHR CFW 3.0.0 SECURITY NOTICE
+
+The source ZIP supplied for the 2.0.0 review contained a private CA key and a hard-coded Apps Script shared secret. They have not been copied into this build. Treat those old credentials as compromised: rotate the relay secret and replace the old CA certificate/key.
+
+This build intentionally contains no config.json, no CA private key, no cached bytecode, and no prefilled credentials. A fresh CA is generated locally only when the user explicitly requests installation.
